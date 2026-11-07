@@ -12,7 +12,7 @@
 
 ### 使用方法
 
-在 `C:\Users\sujie\Documents\SRTP_Work` 运行：
+在 `D:\SRTP_Work` 运行：
 
 ```powershell
 python '.\projects\case-002-vernier-optics\scripts\05_calibrate_ring_coupling.py'
@@ -32,7 +32,7 @@ python '.\projects\case-002-vernier-optics\scripts\05_calibrate_ring_coupling.py
 
 ### 使用方法
 
-在 `C:\Users\sujie\Documents\SRTP_Work` 运行：
+在 `D:\SRTP_Work` 运行：
 
 ```powershell
 python '.\projects\case-002-vernier-optics\scripts\04_dual_ring_static_alignment.py'
@@ -60,7 +60,7 @@ python '.\projects\case-002-vernier-optics\scripts\04_dual_ring_static_alignment
 
 ### 使用方法
 
-在 `C:\Users\sujie\Documents\SRTP_Work` 运行：
+在 `D:\SRTP_Work` 运行：
 
 ```powershell
 python '.\projects\case-002-vernier-optics\scripts\03_dual_ring_cold.py'
@@ -92,7 +92,7 @@ python '.\projects\case-002-vernier-optics\scripts\01_build_mode_cross_section.p
 
 ### 使用方法
 
-从 `C:\Users\sujie\Documents\SRTP_Work` 运行：
+从 `D:\SRTP_Work` 运行：
 
 ```powershell
 python '.\projects\case-002-vernier-optics\scripts\02_build_mzi_ruler.py'

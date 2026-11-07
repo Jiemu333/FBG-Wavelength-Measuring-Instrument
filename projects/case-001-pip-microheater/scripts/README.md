@@ -14,12 +14,12 @@
 脚本已由 Codex 按本案例工作流程执行和核验。日后需要复现时，在 PowerShell 中执行对应命令：
 
 ```powershell
-Set-Location 'C:\Users\sujie\Documents\SRTP_Work'
+Set-Location 'D:\SRTP_Work'
 python '.\projects\case-001-pip-microheater\scripts\12_pip_figures_charge.py' --plan fig2_0to1
 ```
 
 ```powershell
-Set-Location 'C:\Users\sujie\Documents\SRTP_Work'
+Set-Location 'D:\SRTP_Work'
 python '.\projects\case-001-pip-microheater\scripts\12_pip_figures_charge.py' --plan fig23_0to20
 ```
 

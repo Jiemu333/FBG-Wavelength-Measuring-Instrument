@@ -6,6 +6,6 @@
 #   3) 新 Visualizer 窗口中即为 paper_E_xz 的图；在 Chart Settings 里把色标
 #      设为 min=0、max=1.2e6（窗口里只有这一张图，设置一定作用到它）；
 #   4) 截 0 V；把 Parameters 里 V_anode 切到 1，再截 1 V。
-load("C:/Users/sujie/Documents/SRTP_Work/projects/case-001-pip-microheater/results/runs/s12_fig2_0to1_20261105_145819_844533/pip_fig2_0to1.ldev");
+load("D:/SRTP_Work/projects/case-001-pip-microheater/results/runs/s12_fig2_0to1_20261105_145819_844533/pip_fig2_0to1.ldev");
 m = getresult("CHARGE::paper_E_xz", "electrostatics");
 visualize(m);

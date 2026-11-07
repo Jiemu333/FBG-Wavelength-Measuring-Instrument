@@ -26,7 +26,7 @@
 
 请从 Lumerical 窗口手动截图，不需要运行脚本生成图片。截图统一存放在：
 
-`C:\Users\sujie\Documents\SRTP_Work\projects\case-002-vernier-optics\results\figures\s01_mzi_ruler_20261106_172434\`
+`D:\SRTP_Work\projects\case-002-vernier-optics\results\figures\s01_mzi_ruler_20261106_172434\`
 
 如果该目录尚不存在，请先新建。建议保存以下截图：
 
@@ -37,5 +37,7 @@
 | `mzi_dL100um_transmission.png` | `mzi_ruler_dL_100um.icp` | ONA 的 `transmission` 透射谱；与 50 µm 工程比较条纹密度 |
 | `mzi_dL100um_fsr.png` | `mzi_ruler_dL_100um.icp` | ONA 的 `peak → free spectral range` 结果；与 50 µm 工程比较峰间距 |
 | `mode_waveguide_cross_section.png`（可选） | `mzi_waveguide_mode.lms` | FDE mode 1 的横截面场分布 |
+
+已核验的线上截图还包括 [50 µm 自动 FSR](../../figures/s01_mzi_ruler_20261106_172434/mzi_dL050um_fsr.png)、[100 µm 自动 FSR](../../figures/s01_mzi_ruler_20261106_172434/mzi_dL100um_fsr.png)、[FDE mode 1 强度场](<../../figures/s01_mzi_ruler_20261106_172434/屏幕截图 2026-11-06 214331.png>) 和 [mode 1 有效折射率](<../../figures/s01_mzi_ruler_20261106_172434/屏幕截图 2026-11-06 214407.png>)。FSR 图只有少数离散点，因为可见波长范围内只检测到少数相邻峰间距；它不是连续扫描曲线。
 
 本轮采用理想 50:50 耦合器；还未加入实际耦合器偏差、传播损耗、工艺误差、温度漂移或双微环联调。50 µm 和 100 µm 是初步对比参数，不是最终版图尺寸。

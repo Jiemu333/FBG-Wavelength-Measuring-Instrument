@@ -1,5 +1,17 @@
 ﻿# SRTP_Work 目录说明
 
+## 当前位置与新会话续接
+
+| 项目 | 路径或操作 |
+| --- | --- |
+| 实际工作目录 | `D:\SRTP_Work` |
+| 旧路径兼容入口 | `C:\Users\sujie\Documents\SRTP_Work` 是指向 D 盘的目录联接 |
+| 新终端工作目录 | `Set-Location 'D:\SRTP_Work'` |
+| 新会话先读 | 根目录 `AGENTS.md`、`.agents/skills/sim-runner/SKILL.md`、本文件及相关算例 `README.md` |
+| 成功工程索引 | 各算例 `results/runs/README.md` 与成功运行目录中的 `README.md` |
+
+同一会话的上下文不因移动文件而改变。新会话请从上述文件恢复项目规则和已记录的成果；仓库文档不等于完整对话记录。
+
 | 路径 | 内容 |
 | --- | --- |
 | `AGENTS.md` | 协作规则 |
