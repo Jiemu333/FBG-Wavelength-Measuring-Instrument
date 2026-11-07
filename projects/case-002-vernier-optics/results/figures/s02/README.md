@@ -12,6 +12,8 @@
 | [dual_ring_schematic.png](dual_ring_schematic.png) | ONA 输入、两个级联环和三个 ONA 返回端可见；ring1、ring2 的长度分别约为 62.83 µm、69.12 µm | 通过 |
 | [dual_ring_through.png](dual_ring_through.png) | `ONA:input 1/mode 1`；`TE transmission`；`Abs^2`；有连续谐振凹口 | 通过 |
 | [dual_ring_drop1.png](dual_ring_drop1.png) | `ONA:input 2/mode 1`；`TE transmission`；`Abs^2`；有多条窄峰 | 通过 |
-| [dual_ring_drop2.png](dual_ring_drop2.png) | `ONA:input 3/mode 1`；`TE transmission`；`Abs^2`；约 1524～1525 nm 有明显主峰，其他峰很弱 | 通过，属于未对齐的冷态结果 |
+| [dual_ring_drop2.png](dual_ring_drop2.png) | `ONA:input 3/mode 1`；`TE transmission`；`Abs^2`；约 1524～1525 nm 有明显主峰，其他峰很弱 | 通过；说明两环在该波段已有共同峰，但目标 1550 nm 附近尚未对齐 |
+
+这里的“冷态”指未在光学电路中施加加热或电压响应；它不是实测环境温度的声明。s02 将两环设为同一 FDE 主模有效折射率 2.39749，半径分别为 10 µm 和 11 µm。s03 的独立环检查显示，1550 nm 附近的环 1 谐振在 1551.71 nm、环 2 在 1549.21 nm，相差约 2.50 nm；之后才给环 2 增加约 0.00672576 的静态有效折射率偏置，使目标共同峰出现在约 1551.71 nm。这不代表 s02 在所有波长都没有共同谐振。
 
 三个输出端的结果名称、连接关系与[工程说明](../../runs/s02_dual_ring_cold_20261107_000643_250729/README.md)一致。求解日志记录的功率范围分别为 input 1：0.00363～0.99953，input 2：约 1.96×10⁻⁶～0.88582，input 3：约 1.75×10⁻⁷～0.77536；截图中的凹口和峰值量级与之相符。以上数值来自仿真日志，不是实测数据。
