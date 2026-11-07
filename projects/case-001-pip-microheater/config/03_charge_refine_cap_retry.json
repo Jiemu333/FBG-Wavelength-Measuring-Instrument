@@ -1,0 +1,5 @@
+{
+  "source_project": "results/runs/20261102_090510_512039/charge_mesh_medium.ldev",
+  "level_name": "cap60k",
+  "max_refine_steps": 60000
+}

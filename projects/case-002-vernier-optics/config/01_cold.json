@@ -1,0 +1,28 @@
+{
+  "wavelength_m": 1.55e-6,
+  "geometry": {
+    "waveguide_width_m": 0.45e-6,
+    "waveguide_height_m": 0.22e-6,
+    "slab_thickness_m": 0.06e-6,
+    "slab_half_width_m": 4.5e-6,
+    "box_thickness_m": 2.0e-6,
+    "air_thickness_m": 1.0e-6
+  },
+  "materials": {
+    "silicon": "Si (Silicon) - Palik",
+    "oxide": "SiO2 (Glass) - Palik"
+  },
+  "fde": {
+    "x_span_m": 8.0e-6,
+    "z_min_m": -2.0e-6,
+    "z_max_m": 1.2e-6,
+    "trial_modes": 10
+  },
+  "mesh": {
+    "dx_m": 0.02e-6,
+    "dz_m": 0.02e-6,
+    "x_half_span_m": 1.5e-6,
+    "z_min_m": -0.3e-6,
+    "z_max_m": 0.6e-6
+  }
+}

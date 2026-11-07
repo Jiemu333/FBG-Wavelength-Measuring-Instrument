@@ -1,0 +1,35 @@
+﻿{
+  "sequence": 12,
+  "source_project": "results/runs/s03_mesh_cap60k_20261102_100139/charge_mesh_cap60k.ldev",
+  "bias": {
+    "start_V": 0,
+    "stop_V": 1,
+    "interval_V": 0.1,
+    "min_interval_V": 0.02,
+    "backtracking": "disabled"
+  },
+  "solver": {
+    "global_iteration_limit": 100,
+    "gradient_mixing": "conservative",
+    "use_default_update_limits": true,
+    "dds_max_update": 5,
+    "poisson_max_update": 20
+  },
+  "line": {
+    "x_min_m": -0.0000045,
+    "x_max_m": 0.0000045,
+    "y_m": 0,
+    "z_m": 3e-8
+  },
+  "field_roi": {
+    "x_m": 0,
+    "x_span_m": 0.000009,
+    "y_m": 0,
+    "z_m": 1.1e-7,
+    "z_span_m": 3e-7
+  },
+  "required_bias_V": [
+    0,
+    1
+  ]
+}

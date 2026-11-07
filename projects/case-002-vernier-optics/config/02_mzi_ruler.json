@@ -1,0 +1,10 @@
+{
+  "wavelength_start_m": 1.53e-6,
+  "wavelength_stop_m": 1.565e-6,
+  "wavelength_center_m": 1.55e-6,
+  "wavelength_derivative_step_m": 1e-10,
+  "sample_points": 2001,
+  "arm_length_differences_m": [5e-5, 1e-4],
+  "coupling_power_ratios": [0.5, 0.5],
+  "design_basis": "50 µm 和 100 µm 为初步对比参数，参考 Ansys INTERCONNECT 官方 MZI 示例；不是最终版图尺寸。"
+}

@@ -1,0 +1,7 @@
+{
+  "cold_config": "03_dual_ring_cold.json",
+  "target_wavelength_m": 1.55e-6,
+  "adjusted_ring": "auto",
+  "adjustment_method": "warm_lower_nearby_resonance",
+  "parameter_source": "Target is the project's 1550 nm FBG operating center. The offset is calculated from the simulated individual ring resonances and FDE group index; it is not a measured heater response."
+}

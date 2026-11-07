@@ -1,0 +1,9 @@
+{
+  "cold_config": "03_dual_ring_cold.json",
+  "target_wavelength_m": 1.55e-6,
+  "adjusted_ring": "auto",
+  "adjustment_method": "warm_lower_nearby_resonance",
+  "coupling_power_ratios": [0.055, 0.055],
+  "run_prefix": "s05_ring_q_aligned",
+  "parameter_source": "Power coupling 0.055 was selected by the successful s04_ring_q_fit_20261107_104133_622055 run. This is a circuit calibration, not a gap-to-coupling extraction."
+}

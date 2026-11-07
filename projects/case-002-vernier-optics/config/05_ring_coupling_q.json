@@ -1,0 +1,13 @@
+{
+  "cold_config": "03_dual_ring_cold.json",
+  "target_ring": "ring1",
+  "target_wavelength_m": 1.55e-6,
+  "paper_loaded_q": 9000,
+  "paper_through_extinction_db": 20,
+  "power_coupling_candidates": [0.04, 0.045, 0.05, 0.055, 0.06],
+  "parameter_sources": {
+    "paper_loaded_q": "Zhou et al., IEEE Photonics Journal 5, 6601211 (2013), section 3: first-ring through-port Q about 9 x 10^3",
+    "paper_through_extinction_db": "Same section: through-port extinction ratio about 20 dB",
+    "power_coupling_candidates": "Exploratory circuit sweep around the 0.04 baseline; not derived from the physical 200 nm gap"
+  }
+}
