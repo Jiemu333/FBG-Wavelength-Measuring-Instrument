@@ -1,0 +1,13 @@
+# s07 双环共同折射率偏置截图核验
+
+原生工程：`../../runs/s07_ring_common_tuning_20261107_161037_819605/`。求解依据：`../../logs/s07_ring_common_tuning_20261107_161037_819605/driver.log`。以下是 INTERCONNECT 仿真数据，不是实测结果；common offset 是两个环同时施加的有效折射率变化，不对应已标定的电压或温度。
+
+| 截图 | 打开的工程 | 核对项 | 判断 |
+|---|---|---|---|
+| [offset_0.000000.png](offset_0.000000.png) | `dual_ring_common_offset_0p000000.icp` | ONA input 3 / mode 1，TE transmission，`Abs^2`；1520–1600 nm；日志峰位 1551.709 nm、峰值 0.83181 | 通过 |
+| [offset_0.001000.png](offset_0.001000.png) | `dual_ring_common_offset_0p001000.icp` | 同一结果项与坐标；日志峰位 1552.085 nm、峰值 0.830874 | 通过 |
+| [offset_0.002000.png](offset_0.002000.png) | `dual_ring_common_offset_0p002000.icp` | 同一结果项与坐标；日志峰位 1552.452 nm、峰值 0.827709 | 通过 |
+
+| 结论 | 范围与限制 |
+|---|---|
+| 三张图使用一致的全波段横纵轴，主峰随共同偏置单调红移，峰值变化很小。 | 只能证明模型中的折射率调谐，不能证明热调谐或电压响应。主峰位移在 80 nm 横轴上不够醒目；展示连续移动时建议在 Visualizer 中固定 1551–1553 nm 横轴和 0–1 纵轴另行截图。 |
