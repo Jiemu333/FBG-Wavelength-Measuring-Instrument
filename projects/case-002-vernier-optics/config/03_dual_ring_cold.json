@@ -7,6 +7,7 @@
   "waveguide_loss_db_per_cm": 3.5,
   "coupling_power_ratios": [0.04, 0.04],
   "parameter_sources": {
+    "wavelength_center_m": "1550 nm is a reference wavelength chosen for this model, not a fixed FBG center specified by the project proposal",
     "ring_radii_m": "Zhou et al., IEEE Photonics Journal 5, 6601211 (2013), section 3: 10 and 11 um",
     "waveguide_loss_db_per_cm": "Same paper, section 3: measured 3-4 dB/cm; 3.5 dB/cm is the midpoint for a first-pass circuit model",
     "coupling_power_ratios": "Exploratory circuit input, not extracted from the 200 nm physical gap or measured device"

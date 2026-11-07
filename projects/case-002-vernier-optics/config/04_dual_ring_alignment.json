@@ -3,5 +3,5 @@
   "target_wavelength_m": 1.55e-6,
   "adjusted_ring": "auto",
   "adjustment_method": "warm_lower_nearby_resonance",
-  "parameter_source": "Target is the project's 1550 nm FBG operating center. The offset is calculated from the simulated individual ring resonances and FDE group index; it is not a measured heater response."
+  "parameter_source": "1550 nm is a modeling reference wavelength selected for this optical example, not a fixed FBG center specified by the project proposal. The offset is calculated from simulated individual ring resonances and FDE group index; it is not a measured heater response."
 }

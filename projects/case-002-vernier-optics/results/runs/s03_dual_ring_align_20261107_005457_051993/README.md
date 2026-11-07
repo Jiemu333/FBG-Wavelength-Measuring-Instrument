@@ -16,7 +16,7 @@ Visualizer 的 `Scalar operation` 选 `Abs^2`，横轴选波长。
 |---|---|---|
 | `aligned_through.png` | `ONA → input 1 → mode 1 → transmission` | 第一环谐振凹口和波长范围 |
 | `aligned_drop1.png` | `ONA → input 2 → mode 1 → transmission` | 两环级联后的剩余谱 |
-| `aligned_drop2.png` | `ONA → input 3 → mode 1 → transmission` | 共同谐振峰是否移入 1550 nm 附近、主峰与旁峰 |
+| `aligned_drop2.png` | `ONA → input 3 → mode 1 → transmission` | 共同谐振峰是否移入选定的 1550 nm 参考波长附近、主峰与旁峰 |
 | `aligned_schematic.png` | 原理图 | 两环连接及三个输出端口 |
 
 截图由用户手动保存到本算例 `results/figures/` 下与本运行目录同名的文件夹。

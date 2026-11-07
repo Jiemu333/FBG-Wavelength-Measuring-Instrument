@@ -14,7 +14,7 @@
 
 双微环静态对齐成果：[`s03_dual_ring_align_20261107_005457_051993`](results/runs/s03_dual_ring_align_20261107_005457_051993/README.md)。原生结果已核验，待截图复核；此结果尚不代表已完成电热调谐。
 
-双微环冷态成果：[`s02_dual_ring_cold_20261107_000643_250729`](results/runs/s02_dual_ring_cold_20261107_000643_250729/README.md)。原生光谱和[截图](results/figures/s02/README.md)已核验；约 1524–1525 nm 有共同峰，1550 nm 附近的目标峰尚未对齐。
+双微环冷态成果：[`s02_dual_ring_cold_20261107_000643_250729`](results/runs/s02_dual_ring_cold_20261107_000643_250729/README.md)。原生光谱和[截图](results/figures/s02/README.md)已核验；约 1524–1525 nm 有共同峰。1550 nm 是本轮模型选定的参考波长，申报书未指定固定的 FBG 中心波长；在该参考波长附近，两环谐振尚未重合。
 
 | 目录 | 内容 |
 |---|---|
