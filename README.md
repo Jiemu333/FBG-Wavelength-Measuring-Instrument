@@ -7,7 +7,7 @@
 | 实际工作目录 | `D:\SRTP_Work` |
 | 旧路径兼容入口 | `C:\Users\sujie\Documents\SRTP_Work` 是指向 D 盘的目录联接 |
 | 新终端工作目录 | `Set-Location 'D:\SRTP_Work'` |
-| 新会话先读 | 根目录 `AGENTS.md`、`.agents/skills/sim-runner/SKILL.md`、本文件及相关算例 `README.md` |
+| 新会话先读 | 根目录 `AGENTS.md`、`.agents/skills/simulation-flow/SKILL.md`、本文件及相关算例 `README.md` |
 | 成功工程索引 | 各算例 `results/runs/README.md` 与成功运行目录中的 `README.md` |
 
 同一会话的上下文不因移动文件而改变。新会话请从上述文件恢复项目规则和已记录的成果；仓库文档不等于完整对话记录。
@@ -15,7 +15,10 @@
 | 路径 | 内容 |
 | --- | --- |
 | `AGENTS.md` | 协作规则 |
-| `.agents/skills/sim-runner/` | 仿真工作流程 |
+| `.agents/skills/simulation-flow/` | 仿真工作流程 |
+| `.agents/skills/result-verification/` | 成果截图校验 |
+| `.agents/skills/reading-plan/` | 项目方案核对 |
+| `.agents/skills/reading-literature/` | 文献核对 |
 | `projects/case-001-pip-microheater/README.md` | 本案例参数、可用脚本和成功成果索引 |
 | `projects/case-001-pip-microheater/models/` | 原始工程与输入基准 |
 | `projects/case-001-pip-microheater/results/runs/` | 已完成的原生工程 |

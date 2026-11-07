@@ -10,4 +10,4 @@
 | 6 | 数值和求解日志放入案例 `results/logs/`，用户截图放入 `results/figures/`，原生工程放入 `results/runs/`；关键成功成果写入案例 README。 |
 | 7 | 对工程没有操作时不要动对工程的说明文档，即各个README.md |
 
-只保留已成功且可用的脚本、配置和工程；不撰写仿真进度或失败经过。具体流程见 [.agents/skills/sim-runner/SKILL.md](.agents/skills/sim-runner/SKILL.md)。
+只保留已成功且可用的脚本、配置和工程；不撰写仿真进度或失败经过。仿真流程见 [.agents/skills/simulation-flow/SKILL.md](.agents/skills/simulation-flow/SKILL.md)，截图核验见 [.agents/skills/result-verification/SKILL.md](.agents/skills/result-verification/SKILL.md)。
