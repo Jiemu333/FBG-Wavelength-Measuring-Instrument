@@ -1,11 +1,17 @@
 # 原生工程索引
 
-| 工程目录 | 状态 | 工程用途 | 结果查看说明 |
-|---|---|---|---|
-| [`s05_ring_q_aligned_20261107_105136_874630`](s05_ring_q_aligned_20261107_105136_874630/README.md) | 成功，待截图复核 | Q 校准耦合参数 + 静态共同峰对齐；Drop2 主峰约 1551.71 nm | 打开 `dual_ring_static_aligned.icp`；三个端口及截图清单见工程 README |
-| [`s04_ring_q_fit_20261107_104133_622055`](s04_ring_q_fit_20261107_104133_622055/README.md) | 成功，待截图复核 | 0.055 耦合系数下的双环冷态光谱；Through Q 约 8878 | 打开 `dual_ring_q_calibrated.icp`；三个端口与截图清单见工程 README |
-| [`s03_dual_ring_align_20261107_005457_051993`](s03_dual_ring_align_20261107_005457_051993/README.md) | 成功，待截图复核 | 静态折射率偏置使两环在约 1551.71 nm 对齐 | 打开 `dual_ring_static_aligned.icp`；Through、Drop1、Drop2 的查看方法见工程 README |
-| [`s02_dual_ring_cold_20261107_000643_250729`](s02_dual_ring_cold_20261107_000643_250729/README.md) | 成功，待截图复核 | 10/11 µm 双微环冷态光谱 | 打开 `dual_ring_cold.icp`；Through、Drop1、Drop2 的查看方法与截图清单见工程 README |
-| [`s01_mzi_ruler_20261106_172434`](s01_mzi_ruler_20261106_172434/README.md) | 成功，推荐 | 独立 MZI 波长标尺，比较 50 µm 与 100 µm 臂长差 | 查看 ONA 透射谱及自动 FSR；截图清单和保存路径见工程 README |
-| [`s01_mzi_ruler_20261106_171810`](s01_mzi_ruler_20261106_171810/README.md) | 成功，旧版 | 同一 MZI 参数对比，无 ONA 自动 FSR 结果 | 建议改用上方推荐工程 |
-| `s01_mzi_ruler_20261106_171430` | 成功，旧版 | 同一配置的先前运行 | 建议改用上方推荐工程 |
+在 Lumerical INTERCONNECT 中打开对应 `.icp`。工程内结果入口、截图清单见各运行目录 README；截图核验结论见 `../figures/` 下相应目录。以下均为仿真结果。
+
+| 工程目录 | 状态与用途 | 查看说明 |
+|---|---|---|
+| [s09 单环密集失谐](s09_ring_detuning_dense_20261107_181841_036966/README.md) | 11 个原生工程已核验；待截图 | 对齐敏感度，Drop2 峰值功率变化 |
+| [s08 双环密集共同偏置](s08_ring_common_dense_20261107_181503_872760/README.md) | 13 个原生工程已核验；待截图 | Drop2 主峰连续移动 |
+| [s07 双环共同偏置](s07_ring_common_tuning_20261107_161037_819605/README.md) | 原生工程及三张截图已核验 | 三个偏置点的 Drop2 谱；[截图结论](../figures/s07/README.md) |
+| [s06 单环失谐](s06_ring_index_tuning_20261107_160617_463134/README.md) | 原生工程及三张截图已核验；需统一纵轴补截图 | 三个比例的 Drop2 谱；[截图结论](../figures/s06/README.md) |
+| [s05 Q 校准加静态对齐](s05_ring_q_aligned_20261107_105136_874630/README.md) | 原生工程及截图已核验 | 打开 `dual_ring_static_aligned.icp`；[截图结论](../figures/s05/README.md) |
+| [s04 Q 校准](s04_ring_q_fit_20261107_104133_622055/README.md) | 原生工程及截图已核验 | 打开 `dual_ring_q_calibrated.icp`；[截图结论](../figures/s04/README.md) |
+| [s03 静态对齐](s03_dual_ring_align_20261107_005457_051993/README.md) | 原生工程及截图已核验 | 打开 `dual_ring_static_aligned.icp`；[截图结论](../figures/s03/README.md) |
+| [s02 双环冷态](s02_dual_ring_cold_20261107_000643_250729/README.md) | 原生工程及截图已核验 | 打开 `dual_ring_cold.icp`；[截图结论](../figures/s02/README.md) |
+| [s01 MZI 标尺](s01_mzi_ruler_20261106_172434/README.md) | 原生工程及截图已核验；100 µm 透射图运算待统一 | 50/100 µm 臂长差；[截图结论](../figures/s01_mzi_ruler_20261106_172434/README.md) |
+
+旧的 s01 MZI 运行目录仅供追溯，以以上带自动 FSR 结果的工程为准。

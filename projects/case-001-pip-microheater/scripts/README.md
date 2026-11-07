@@ -9,6 +9,30 @@
 
 两个任务各自复制源工程，输出目录独立。可以在两个终端分别启动；同时求解会占用更多内存与许可证。如果高压任务未覆盖配置要求的 0、1、10、20 V 点，脚本返回 `SIM_DONE_STATUS=1`，不把输出标为完成成果。
 
+## `23_charge_to20_staged.py`
+
+### 脚本用途
+
+| 输入工程 | 配置与参数来源 | 功能 | 原生输出与校验 |
+|---|---|---|---|
+| s03 网格基准、已成功的 s21 续算工程 | `config/23_charge_to20_stages.json`；起点取自 s21 的原生 `V_anode`，各阶段终点和步长来自配置 | 逐段运行耦合 CHARGE/HEAT 至 20 V；每段只从上一段已验证工程继续 | 每段在 `results/runs/sNN_charge_to.../` 保存 `.ldev`，求解日志在对应 `results/logs/`；核验终点偏压、T/Q、电流、能带和局部监视器。具体查看方法见成功运行目录 README |
+
+失败时停在最后一个成功工程；总状态见控制日志目录的 `state.json`。脚本只保存原生工程及日志，不生成图片或自制表格。
+
+### 使用方法
+
+本轮由 Codex 以独立进程启动。查看控制日志目录的 `state.json`，并核对最终工程确实达到 20 V，才能判断是否完成。
+
+## `12_pip_figures_charge.py`：短段续算
+
+### 脚本用途
+
+`config/fig23_resume_short.json` 从 2.1390625 V 接续到 2.140625 V，已经成功。原生工程在 `results/runs/s21_fig23_resume_short_20261107_162546_719649/`。
+
+### 使用方法
+
+在 `D:\SRTP_Work` 运行 `python '.\projects\case-001-pip-microheater\scripts\12_pip_figures_charge.py' --plan fig23_resume_short`。查看结果见 `results/runs/README.md`。
+
 ## 复现命令
 
 脚本已由 Codex 按本案例工作流程执行和核验。日后需要复现时，在 PowerShell 中执行对应命令：

@@ -11,6 +11,8 @@
 
 ## 成功工程
 
+最新成功续算：[s23：2.2 V CHARGE/HEAT 耦合工程](results/runs/s23_charge_to2p2_20261107_170232_503082/README.md)。此前的 [s21：2.140625 V 工程](results/runs/s21_fig23_resume_short_20261107_162546_719649/pip_fig23_resume_short.ldev)仍保留。后续至 20 V 的分段续算尚未列为成功成果。
+
 | 工程 | 已完成范围 | 查看重点 |
 | --- | --- | --- |
 | `results/runs/s01_baseline_20261101_101141/heater_charge_0to1V.ldev` | CHARGE 0～1 V，11 点 | `CHARGE > anode > I`、`integrated > Q`、温度监视器 `T` |

@@ -1,5 +1,61 @@
 # 脚本说明
 
+## `06_scan_ring_index_tuning.py`：s09 单环密集微调配置
+
+### 脚本用途
+
+| 输入 | 功能 | 原生输出与校验 |
+|---|---|---|
+| `config/10_detuning_dense_scan.json`、`config/06_q_calibrated_alignment.json`、FDE 主模结果 | 只改变用于静态对齐的 `ring2` 有效折射率，扫描 11 个对齐比例，检查 Drop2 峰值功率对失配的敏感度 | `results/runs/s09_ring_detuning_dense_*/` 中 11 份 `.icp`；核验 ONA 三端口、附近峰值功率与波长。打开方法见该运行目录 README |
+
+比例是光学电路探索输入，不是加热电压；脚本不制作图片或自制结果表格。
+
+### 使用方法
+
+在 `D:\SRTP_Work` 运行 `python '.\projects\case-002-vernier-optics\scripts\06_scan_ring_index_tuning.py' --config 10_detuning_dense_scan.json`。截图设置和结果入口见成功运行目录 README。
+
+## `07_scan_common_mode_tuning.py`：s08 密集扫描配置
+
+### 脚本用途
+
+| 输入 | 功能 | 原生输出与校验 |
+|---|---|---|
+| `config/09_common_dense_scan.json`、`config/06_q_calibrated_alignment.json`、FDE 主模结果 | 在 s05 静态对齐基础上，对两环共同有效折射率给出 13 个递增偏置；检查 Drop2 峰是否逐步移动 | `results/runs/s08_ring_common_dense_*/` 内 13 份 `.icp`；每份核对 ONA 三端口、Drop2 峰位与功率。截图顺序和统一坐标见该运行目录 README |
+
+配置偏置是探索输入，不是电压或实测温度；脚本不生成图片或自制结果表格。
+
+### 使用方法
+
+在 `D:\SRTP_Work` 运行 `python '.\projects\case-002-vernier-optics\scripts\07_scan_common_mode_tuning.py' --config 09_common_dense_scan.json`。打开工程与截图方法见成功运行目录 README。
+
+## `07_scan_common_mode_tuning.py`
+
+### 脚本用途
+
+| 输入 | 功能 | 原生输出与校验 |
+|---|---|---|
+| `config/08_common_mode_tuning.json`、`config/06_q_calibrated_alignment.json`、波导 FDE 工程 | 在静态对齐后协同增加两环有效折射率，检查 Drop2 通带移动 | `results/runs/s07_ring_common_tuning_*/` 内三份 `.icp`；核验 `ONA` 的 Through、Drop1、Drop2、主峰位置和功率，具体见运行目录 README |
+
+配置中的折射率增量是探索输入，不是已标定的电压或温度。脚本只保存原生工程和日志。
+
+### 使用方法
+
+在 `D:\SRTP_Work` 运行 `python '.\projects\case-002-vernier-optics\scripts\07_scan_common_mode_tuning.py'`。查看结果和截图清单见对应运行目录 README。
+
+## `06_scan_ring_index_tuning.py`
+
+### 脚本用途
+
+| 输入 | 功能 | 原生输出与校验 |
+|---|---|---|
+| `config/07_index_tuning_scan.json`、`config/06_q_calibrated_alignment.json`、波导 FDE 工程 | 只改变被静态对齐的一个环，检查 Drop2 对失配的敏感度 | `results/runs/s06_ring_index_tuning_*/` 内三份 `.icp`；核验三个 ONA 端口、峰位和峰值功率，具体见运行目录 README |
+
+此脚本检验对齐敏感度，不建立电压、温度或波长标定关系。
+
+### 使用方法
+
+在 `D:\SRTP_Work` 运行 `python '.\projects\case-002-vernier-optics\scripts\06_scan_ring_index_tuning.py'`。查看结果和截图清单见对应运行目录 README。
+
 ## `05_calibrate_ring_coupling.py`
 
 ### 脚本用途

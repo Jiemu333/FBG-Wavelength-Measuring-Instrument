@@ -1,5 +1,32 @@
 # 已完成工程：打开与查结果
 
+## s23_charge_to2p2_20261107_170232_503082/charge_to2p2.ldev
+
+### 工程打开后使用方法
+
+在 DEVICE 打开 [`s23_charge_to2p2_20261107_170232_503082/charge_to2p2.ldev`](s23_charge_to2p2_20261107_170232_503082/charge_to2p2.ldev)，选择 `CHARGE`。具体 Result View 入口和本段偏压范围见[该工程 README](s23_charge_to2p2_20261107_170232_503082/README.md)。
+
+### 可以得到的结果（及截图）
+
+2.2 V 的原生电流、发热功率、温度和局部分布已通过脚本核验；截图清单及查看方法见该工程 README。求解器日志报告成功。
+
+## s21_fig23_resume_short_20261107_162546_719649/pip_fig23_resume_short.ldev
+
+### 工程打开后使用方法
+
+用 Lumerical DEVICE 打开 [`s21_fig23_resume_short_20261107_162546_719649/pip_fig23_resume_short.ldev`](s21_fig23_resume_short_20261107_162546_719649/pip_fig23_resume_short.ldev)。选 `CHARGE`，在 Result View 双击 `anode`、`integrated` 或 `thermal`；在 Visualizer 的 Parameters 选择 `V_anode=2.140625 V`，`V_cathode=0 V`。
+
+### 可以得到的结果（及截图）
+
+| 结果 | 工程内位置 | 核验重点 |
+|---|---|---|
+| 电流 | `CHARGE → anode → I` | 2.140625 V 的原生偏压点 |
+| 发热功率 | `CHARGE → integrated → Q` | 发热功率存在且有限 |
+| 温度与热源 | `CHARGE → thermal → T/Q` | 温度/发热分布存在且有限 |
+| 局部电场与能带 | `CHARGE → paper_E_xz / paper_bandline` | 截面监视器有对应数据 |
+
+求解器日志明确报告成功，脚本也核验了原生结果集和目标偏压。截图由用户手动存放在 `results/figures/s21_fig23_resume_short_20261107_162546_719649/`。
+
 在 **Ansys Lumerical DEVICE → File → Open** 打开下面各工程的 `.ldev`。这些文件保存了原生仿真结果；查看已有结果无需重新点击 Simulation。隐藏的时间戳目录是工程内部引用使用的 Windows Junction 兼容路径，日常从下文的 `sNN_...` 目录打开工程。`models/` 中的输入工程用途见 [`../../models/README.md`](../../models/README.md)。
 
 ## s01_baseline_20261101_101141/heater_charge_0to1V.ldev
