@@ -85,8 +85,6 @@ def main() -> int:
                  neff, ng, adjusted_ring, alignment_offset)
 
     rows = []
-    first_ring_fsr = chosen_peak**2 / (ng * 2 * math.pi * radii[0])
-    shorter_order = chosen_peak - first_ring_fsr
     for fraction in fractions:
         label = f"{fraction:.3f}".replace(".", "p")
         project = run_dir / f"dual_ring_index_fraction_{label}.icp"
@@ -101,45 +99,32 @@ def main() -> int:
             wave, power = aligner.spectrum(ic, 3)
             candidates = aligner.local_maxima(wave, power)
             nearest = int(candidates[np.argmin(np.abs(wave[candidates] - chosen_peak))])
-            shorter = int(candidates[np.argmin(np.abs(wave[candidates] - shorter_order))])
-            strongest = int(np.argmax(power))
             peak_nm = float(wave[nearest] * 1e9)
             peak_power = float(power[nearest])
             ic.save(str(project))
-            logging.info("fraction=%g; delta_neff=%g; shorter-order peak=%g nm power=%g; center-order peak=%g nm power=%g; global maximum=%g nm power=%g; project=%s",
-                         fraction, fraction * alignment_offset,
-                         wave[shorter] * 1e9, power[shorter], peak_nm, peak_power,
-                         wave[strongest] * 1e9, power[strongest], project)
-            rows.append((fraction, project.name,
-                         float(wave[shorter] * 1e9), float(power[shorter]),
-                         peak_nm, peak_power,
-                         float(wave[strongest] * 1e9), float(power[strongest])))
+            logging.info("fraction=%g; delta_neff=%g; nearest Drop2 peak=%g nm; peak power=%g; project=%s",
+                         fraction, fraction * alignment_offset, peak_nm, peak_power, project)
+            rows.append((fraction, project.name, peak_nm, peak_power))
             print(f"COMPLETED_PROJECT={project}", flush=True)
         finally:
             if ic is not None:
                 ic.close()
 
-    table = "\n".join(
-        f"| {f:g} | `{name}` | {short_w:.3f} / {short_p:.4g} | "
-        f"{center_w:.3f} / {center_p:.4g} | {top_w:.3f} / {top_p:.4g} |"
-        for f, name, short_w, short_p, center_w, center_p, top_w, top_p in rows)
+    table = "\n".join(f"| {f:g} | `{name}` | {w:.6f} | {p:.6g} |"
+                      for f, name, w, p in rows)
     screenshots = "\n".join(
         f"| `fraction_{f:.3f}.png` | `{name}` → `ONA → input 3 → mode 1 → transmission` | 峰值功率、峰位和旁峰 |"
-        for f, name, *_ in rows)
+        for f, name, _, _ in rows)
     readme = f"""# 双微环折射率扫描
-
-## 算例做了什么
 
 本次只扫描电路模型中 `{adjusted_ring}` 的有效折射率。折射率改变量等于
 `fraction × {alignment_offset:.9g}`；1.0 对应 s05 的静态对齐输入。
 各 fraction 是配置中的探索值，不代表电压、温度或实测数据。
-此轮比较相邻短波谐振阶次与中心阶次的 Drop2 峰值变化；一个工程对应一个固定 fraction，
-不同工程按 fraction 从小到大打开即可查看峰高交换，不生成动态图。
 
 ## 工程文件
 
-| fraction | 原生工程 | 短波侧局部峰 nm / 功率 | 中心局部峰 nm / 功率 | 全带最高峰 nm / 功率 |
-|---:|---|---:|---:|---:|
+| fraction | 原生工程 | 就近 Drop2 峰位 (nm) | 峰值功率透射率 |
+|---:|---|---:|---:|
 {table}
 
 ## 工程打开后使用方法
@@ -155,10 +140,7 @@ Visualizer 把 `Scalar operation` 设为 `Abs^2`、横轴设为 wavelength，
 |---|---|---|
 {screenshots}
 
-截图由用户保存到 `results/figures/{run_id}/`。逐张截图保持波长范围 1520～1600 nm、
-功率透射率纵轴 0～1，Scalar operation 为 `Abs^2`。
-表中“短波侧局部峰”按环 1 的 FSR 估算位置搜索，“中心局部峰”按静态对齐波长搜索；
-“全带最高峰”直接取 ONA 结果中的最大功率点。三者不能混为同一条连续移动的峰。
+截图由用户保存到 `results/figures/{run_id}/`。不同图使用相同波长范围和 `Abs^2` 标度。
 """
     (run_dir / "README.md").write_text(readme, encoding="utf-8")
     print(f"LOG_DIRECTORY={log_dir}", flush=True)
