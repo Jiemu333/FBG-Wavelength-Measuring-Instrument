@@ -2,6 +2,10 @@
 
 ## `dual_ring_cold.icp`
 
+### 算例做了什么
+
+建立半径为 10 µm 和 11 µm 的级联双微环冷态电路，两环采用同一 FDE 主模的有效折射率和群折射率，使用初始耦合参数扫描 1520–1600 nm。比较 Through、Drop1、Drop2 光谱，作为后续对齐与耦合校准的起点；未施加热或电压响应。
+
 ### 工程打开后使用方法
 
 用 Ansys Lumerical INTERCONNECT 打开本工程。电路为 `ONA → ring1 → ring2` 的级联双环：

@@ -2,10 +2,33 @@
 
 `models/` 保存仿真输入。已完成的结果工程见 [`../results/runs/README.md`](../results/runs/README.md)。
 
-| 工程 | 用途 | 使用方法 | 结果在哪里看 |
-| --- | --- | --- | --- |
-| [`source/tw_modulator_DEVICE_HEAT_original.ldev`](source/tw_modulator_DEVICE_HEAT_original.ldev) | 组员交接原件；核对原始几何、材料、掺杂和边界条件 | 在 DEVICE 中用 **File → Open** 打开，只读对照；要修改时先 **File → Save As** 另存副本 | 这是输入原件，不当作已完成结果。打开后若 **Result View** 有数据，可查看文件内已有数据；已确认的求解结果在 `results/runs/` |
-| [`baseline/heater_temperature_fixed.ldev`](baseline/heater_temperature_fixed.ldev) | 修正温度监视器后的固定输入基准 | 用 **File → Open** 检查 `CHARGE`、温度监视器和求解设置；新仿真从副本开始 | 这是输入基准。新仿真结果在 `results/runs/<运行编号>/*.ldev`；本基准文件本身不代表新一轮求解完成 |
+## `source/tw_modulator_DEVICE_HEAT_original.ldev`
+
+### 算例做了什么
+
+组员交接的原始截面模型，包含几何、材料、p 区与 p++ 区掺杂、电极及 CHARGE/HEAT 设置；用于核对器件原始配置。本文件是输入原件，不能据此认定后续计算已经完成。
+
+### 工程打开后使用方法
+
+在 DEVICE 用 **File → Open** 打开本文件，对照下方“在输入工程中检查配置”表逐项查看；需修改时先另存副本。
+
+### 可以得到的结果（及截图）
+
+可查看文件内保存的结构、掺杂与边界配置；若已有 Result View 数据，仅代表交接时文件所含内容。后续核验过的求解结果应从 [`../results/runs/`](../results/runs/README.md) 打开。
+
+## `baseline/heater_temperature_fixed.ldev`
+
+### 算例做了什么
+
+以交接工程为基础修正温度监视器设置，作为后续电热计算的固定输入基准；它本身不是一轮新的求解结果。
+
+### 工程打开后使用方法
+
+在 DEVICE 用 **File → Open** 打开本文件，检查 `CHARGE`、`temperature_monitor` 和求解设置；新计算从副本启动。
+
+### 可以得到的结果（及截图）
+
+可核对输入配置和监视器范围。已完成的电流、发热和温度数据在 [`../results/runs/`](../results/runs/README.md) 的对应 `.ldev` 工程中查看。
 
 ## 在输入工程中检查配置
 

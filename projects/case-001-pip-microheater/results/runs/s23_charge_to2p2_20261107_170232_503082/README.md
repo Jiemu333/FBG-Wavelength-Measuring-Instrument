@@ -2,6 +2,10 @@
 
 ## `charge_to2p2.ldev`
 
+### 算例做了什么
+
+接续 s21 已求解到 2.140625 V 的 CHARGE/HEAT 工程，将阳极偏压分段推进到 2.2 V，阴极保持 0 V；本段用于验证电热耦合续算能否跨过此前的收敛区间。它只覆盖本段偏压，不代表 0～20 V 扫描完成。
+
 ### 工程打开后使用方法
 
 用 Lumerical DEVICE 打开本目录的 `charge_to2p2.ldev`。选 `CHARGE`，在 Result View

@@ -2,6 +2,10 @@
 
 ## `dual_ring_q_calibrated.icp`
 
+### 算例做了什么
+
+在冷态双环电路中扫描总线功率耦合系数，并选用 0.055，使 Through 谐振的加载 Q 接近论文报告的约 9000；本轮计算值约 8878。此算例尚未叠加 s03 的静态峰对齐，也未建立耦合间隙到系数的器件级映射。
+
 ### 工程打开后使用方法
 
 在 Ansys Lumerical INTERCONNECT 打开本工程。选中 `ONA`，在 Result View

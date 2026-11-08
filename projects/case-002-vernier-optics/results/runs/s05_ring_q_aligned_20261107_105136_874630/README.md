@@ -2,6 +2,10 @@
 
 ## `dual_ring_static_aligned.icp`
 
+### 算例做了什么
+
+把 s04 选出的 0.055 耦合系数与 s03 的 ring2 静态折射率偏置合并，在同一个双环工程中得到约 1551.71 nm 的 Drop2 共同峰。它是后续折射率扫描的光学基准，尚非电压驱动的热调谐结果。
+
 ### 工程打开后使用方法
 
 用 Ansys Lumerical INTERCONNECT 打开该 `.icp`。在原理图中，`ring1` 的 Drop

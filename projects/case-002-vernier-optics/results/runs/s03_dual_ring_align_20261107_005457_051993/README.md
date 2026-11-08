@@ -2,6 +2,10 @@
 
 ## `dual_ring_static_aligned.icp`
 
+### 算例做了什么
+
+在 s02 冷态电路基础上，选取 1550 nm 参考点附近的两个单环谐振，给 ring2 加入约 0.00672576 的静态有效折射率偏置，使 Drop2 共同峰移到约 1551.71 nm。偏置是光学模型参数，尚未由加热电压标定。
+
 ### 工程打开后使用方法
 
 用 Ansys Lumerical INTERCONNECT 打开该 `.icp`。在原理图中，`ring1` 的 Drop
