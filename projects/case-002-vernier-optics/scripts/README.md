@@ -1,5 +1,19 @@
 # 脚本说明
 
+## `06_scan_ring_index_tuning.py`：s09 相邻阶主峰转换配置
+
+### 脚本用途
+
+| 输入 | 功能 | 原生输出与校验 |
+|---|---|---|
+| `config/11_detuning_peak_transfer.json`、`config/06_q_calibrated_alignment.json`、FDE 主模结果 | 只改变 `ring2` 的静态有效折射率；按 0.75～1.00 的 14 个比例点计算独立工程，在峰高交换区加密 | `results/runs/s09_ring_peak_transfer_*/` 中 14 份 `.icp`；核验 ONA `input 3` 的短波侧局部峰、中心局部峰和全波段最高峰。工程打开方式见该运行目录 README |
+
+此配置用于观察约 1543 nm 与 1551.7 nm 两处通带的强弱变化，不是峰位连续移动的热调谐，也不对应电压或温度。脚本只保存原生工程、日志和工程说明。
+
+### 使用方法
+
+在 `D:\SRTP_Work` 运行 `python '.\projects\case-002-vernier-optics\scripts\06_scan_ring_index_tuning.py' --config 11_detuning_peak_transfer.json`。每份工程打开后依次选 `ONA → input 3 → mode 1 → transmission`，`Scalar operation=Abs^2`；截图时三图使用同一横纵轴范围。
+
 ## `06_scan_ring_index_tuning.py`：s09 单环密集微调配置
 
 ### 脚本用途

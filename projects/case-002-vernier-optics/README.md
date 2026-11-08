@@ -1,12 +1,14 @@
 # 双微环与 MZI 光学模型
 
+相邻阶主峰转换成果：[`s09_ring_peak_transfer_20261108_214832_926296`](results/runs/s09_ring_peak_transfer_20261108_214832_926296/README.md)。14 个静态折射率比例点的原生工程与日志已核验；全带最高 Drop2 峰由 `fraction=0.80` 时约 1542.88 nm 的短波侧峰，切换到 `0.85` 时约 1551.35 nm 的中心一侧峰，至 `1.00` 时约 1551.71 nm、功率透射率 0.832。截图待用户核验。
+
 密集单环微调成果：[`s09_ring_detuning_dense_20261107_181841_036966`](results/runs/s09_ring_detuning_dense_20261107_181841_036966/README.md)。11 个原生工程已核验；对齐点的 Drop2 峰值功率透射率约 0.832，偏离对齐后下降。它用于对齐敏感度比较，待用户截图复核。
 
 密集协同调谐成果：[`s08_ring_common_dense_20261107_181503_872760`](results/runs/s08_ring_common_dense_20261107_181503_872760/README.md)。13 个原生工程已核验，Drop2 主峰随共同折射率偏置从 1551.709 nm 连续移动到 1552.829 nm；待用户逐图截图复核。工程 README 给出统一显示范围与截图顺序。
 
 双环协同调谐成果：[`s07_ring_common_tuning_20261107_161037_819605`](results/runs/s07_ring_common_tuning_20261107_161037_819605/README.md)。原生谱线和[三张截图](results/figures/s07/README.md)已核验：共同折射率增量 0、0.001、0.002 时，Drop2 主峰约为 1551.709、1552.085、1552.452 nm。它尚未换算成驱动电压。
 
-单环对齐敏感度成果：[`s06_ring_index_tuning_20261107_160617_463134`](results/runs/s06_ring_index_tuning_20261107_160617_463134/README.md)。原生谱线和[三张截图](results/figures/s06/README.md)已核验：偏离对齐状态时主峰功率大幅下降；截图纵轴尚需统一后才能直接比较峰高。
+单环对齐敏感度成果：[`s06_ring_index_tuning_20261107_160617_463134`](results/runs/s06_ring_index_tuning_20261107_160617_463134/README.md)。原生谱线和[三张截图](results/figures/s06/README.md)已核验：三图统一坐标后，可比较 1543、1551.7、1560 nm 附近相邻阶主峰的强弱。
 
 当前组合光学基准：[`s05_ring_q_aligned_20261107_105136_874630`](results/runs/s05_ring_q_aligned_20261107_105136_874630/README.md)。已合并 Q 校准和静态峰对齐；原生结果和[截图](results/figures/s05/README.md)已核验。
 
