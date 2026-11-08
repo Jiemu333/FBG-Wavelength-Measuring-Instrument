@@ -36,19 +36,19 @@
 
 | 截图名 | 工程内查看位置 | 核验重点 |
 |---|---|---|
-| `offset_0.000000.png` | `dual_ring_common_offset_0p000000.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.000250.png` | `dual_ring_common_offset_0p000250.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.000500.png` | `dual_ring_common_offset_0p000500.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.000750.png` | `dual_ring_common_offset_0p000750.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.001000.png` | `dual_ring_common_offset_0p001000.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.001250.png` | `dual_ring_common_offset_0p001250.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.001500.png` | `dual_ring_common_offset_0p001500.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.001750.png` | `dual_ring_common_offset_0p001750.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.002000.png` | `dual_ring_common_offset_0p002000.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.002250.png` | `dual_ring_common_offset_0p002250.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.002500.png` | `dual_ring_common_offset_0p002500.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.002750.png` | `dual_ring_common_offset_0p002750.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
-| `offset_0.003000.png` | `dual_ring_common_offset_0p003000.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| `dual_ring_common_offset_0p000000.icp.png` | `dual_ring_common_offset_0p000000.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| `dual_ring_common_offset_0p000250.icp.png` | `dual_ring_common_offset_0p000250.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| `dual_ring_common_offset_0p000500.icp.png` | `dual_ring_common_offset_0p000500.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| `dual_ring_common_offset_0p000750.icp.png` | `dual_ring_common_offset_0p000750.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| `dual_ring_common_offset_0p001000.icp.png` | `dual_ring_common_offset_0p001000.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| `dual_ring_common_offset_0p001250.icp.png` | `dual_ring_common_offset_0p001250.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| `dual_ring_common_offset_0p001500.icp.png` | `dual_ring_common_offset_0p001500.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| `dual_ring_common_offset_0p001750.icp.png` | `dual_ring_common_offset_0p001750.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| `dual_ring_common_offset_0p002000.icp.png` | `dual_ring_common_offset_0p002000.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| `dual_ring_common_offset_0p002250.icp.png` | `dual_ring_common_offset_0p002250.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| 尚无截图 | `dual_ring_common_offset_0p002500.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| 尚无截图 | `dual_ring_common_offset_0p002750.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
+| 尚无截图 | `dual_ring_common_offset_0p003000.icp` → `ONA → input 3 → mode 1 → transmission` | Drop2 主峰的波长、功率和旁峰 |
 
 截图由用户存入 `results/figures/s08_ring_common_dense_20261107_181503_872760/`，各张图使用相同波长范围与功率标度。
 
@@ -57,7 +57,7 @@
 按上表从 `0p000000` 到 `0p003000` 的顺序逐个打开工程、截图。13 张图建议统一使用
 `wavelength = 1551.4～1553.1 nm`、功率透射率纵轴 `0～1`，并保持同一窗口尺寸；
 Visualizer 的 `Scalar operation` 均选 `Abs^2`。每张图保留横纵轴、`ONA` 结果名称，
-截图文件名按上表的 `offset_*.png` 保存。以上坐标范围仅用于展示，不改变仿真输入或结果。
+现有 10 张截图采用 `dual_ring_common_offset_0p*.icp.png` 命名；末尾 3 个偏置点尚无截图。逐图核验见[截图目录说明](../../figures/s08_ring_common_dense_20261107_181503_872760/README.md)。以上坐标范围仅用于展示，不改变仿真输入或结果。
 
 ### 原生结果核验
 

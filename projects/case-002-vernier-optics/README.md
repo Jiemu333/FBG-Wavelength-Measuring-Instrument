@@ -1,8 +1,8 @@
 # 双微环与 MZI 光学模型
 
-密集单环微调成果：[`s09_ring_detuning_dense_20261107_181841_036966`](results/runs/s09_ring_detuning_dense_20261107_181841_036966/README.md)。11 个原生工程已核验；对齐点的 Drop2 峰值功率透射率约 0.832，偏离对齐后下降。它用于对齐敏感度比较，待用户截图复核。
+密集单环微调成果：[`s09_ring_detuning_dense_20261107_181841_036966`](results/runs/s09_ring_detuning_dense_20261107_181841_036966/README.md)。11 个原生工程与 [11 张成果截图](results/figures/s09_ring_detuning_dense_20261107_181841_036966/README.md)已对照核验；对齐点的 Drop2 峰值功率透射率约 0.832，偏离对齐后下降。它用于对齐敏感度比较。
 
-密集协同调谐成果：[`s08_ring_common_dense_20261107_181503_872760`](results/runs/s08_ring_common_dense_20261107_181503_872760/README.md)。13 个原生工程已核验，Drop2 主峰随共同折射率偏置从 1551.709 nm 连续移动到 1552.829 nm；待用户逐图截图复核。工程 README 给出统一显示范围与截图顺序。
+密集协同调谐成果：[`s08_ring_common_dense_20261107_181503_872760`](results/runs/s08_ring_common_dense_20261107_181503_872760/README.md)。13 个原生工程已核验，Drop2 主峰随共同折射率偏置从 1551.709 nm 连续移动到 1552.829 nm；[现有 10 张成果截图](results/figures/s08_ring_common_dense_20261107_181503_872760/README.md)已对照核验，末尾 3 个偏置点尚无截图。
 
 双环协同调谐成果：[`s07_ring_common_tuning_20261107_161037_819605`](results/runs/s07_ring_common_tuning_20261107_161037_819605/README.md)。原生谱线和[三张截图](results/figures/s07/README.md)已核验：共同折射率增量 0、0.001、0.002 时，Drop2 主峰约为 1551.709、1552.085、1552.452 nm。它尚未换算成驱动电压。
 

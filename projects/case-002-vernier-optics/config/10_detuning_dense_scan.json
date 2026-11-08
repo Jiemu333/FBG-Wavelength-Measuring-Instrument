@@ -1,0 +1,9 @@
+{
+  "alignment_config": "06_q_calibrated_alignment.json",
+  "index_offset_fractions": [
+    0.9, 0.92, 0.94, 0.96, 0.98, 1.0,
+    1.02, 1.04, 1.06, 1.08, 1.1
+  ],
+  "run_prefix": "s09_ring_detuning_dense",
+  "parameter_source": "Exploratory fractions of the s05 static alignment index offset. This is an optical misalignment sensitivity study, not a voltage or temperature sweep."
+}

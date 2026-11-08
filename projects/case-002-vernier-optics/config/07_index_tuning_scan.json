@@ -1,0 +1,6 @@
+{
+  "alignment_config": "06_q_calibrated_alignment.json",
+  "index_offset_fractions": [0.75, 1.0, 1.25],
+  "run_prefix": "s06_ring_index_tuning",
+  "parameter_source": "Fractions are exploratory inputs around the s05 optical alignment. They are not voltages, temperatures, or measured thermo-optic coefficients."
+}

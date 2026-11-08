@@ -1,0 +1,7 @@
+{
+  "alignment_config": "06_q_calibrated_alignment.json",
+  "common_index_offsets": [0.0, 0.001, 0.002],
+  "passband_tracking_window_m": 2e-9,
+  "run_prefix": "s07_ring_common_tuning",
+  "parameter_source": "Exploratory common effective-index offsets after s05 static alignment; no voltage or temperature mapping is implied."
+}

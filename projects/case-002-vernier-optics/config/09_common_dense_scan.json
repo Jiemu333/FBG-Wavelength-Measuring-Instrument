@@ -1,0 +1,11 @@
+{
+  "alignment_config": "06_q_calibrated_alignment.json",
+  "common_index_offsets": [
+    0.0, 0.00025, 0.0005, 0.00075, 0.001,
+    0.00125, 0.0015, 0.00175, 0.002,
+    0.00225, 0.0025, 0.00275, 0.003
+  ],
+  "passband_tracking_window_m": 2e-9,
+  "run_prefix": "s08_ring_common_dense",
+  "parameter_source": "Exploratory common effective-index scan around the verified s05 optical alignment. Values are circuit inputs, not measured or electrothermally derived."
+}
