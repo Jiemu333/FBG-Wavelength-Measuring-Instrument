@@ -14,4 +14,4 @@
 | [s02 双环冷态](s02_dual_ring_cold_20261107_000643_250729/README.md) | 原生工程及截图已核验 | 打开 `dual_ring_cold.icp`；[截图结论](../figures/s02/README.md) |
 | [s01 MZI 标尺](s01_mzi_ruler_20261106_172434/README.md) | 原生工程及截图已核验；100 µm 透射图运算待统一 | 50/100 µm 臂长差；[截图结论](../figures/s01_mzi_ruler_20261106_172434/README.md) |
 
-旧的 s01 MZI 运行目录仅供追溯，以以上带自动 FSR 结果的工程为准。
+`s01_mzi_ruler_20261106_172434` 是唯一保留的 MZI 标尺运行目录，含 MODE 波导工程和两种臂长差的 INTERCONNECT 工程。
