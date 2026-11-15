@@ -1,0 +1,6 @@
+{
+  "base_config": "13_bus_ring_coupler_varfdtd.json",
+  "run_prefix": "s12_bus_ring_coupler_refined",
+  "mesh_dx_m": 2.0e-8,
+  "mesh_dy_m": 1.0e-8
+}

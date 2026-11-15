@@ -1,5 +1,15 @@
 # 脚本说明
 
+## `10_bus_ring_coupler_varfdtd.py`：s11/s12 局部电磁耦合
+
+| 输入与参数来源 | 脚本功能 | 原生输出与校验 |
+|---|---|---|
+| `config/13_bus_ring_coupler_varfdtd.json` 或继承它的 `config/14_bus_ring_coupler_varfdtd_refined.json`；几何来自 `config/11_ring_physical.json` | 用 MODE varFDTD 建直波导、200 nm 间隙和 10/11 μm 弯曲环；先跑无环对照，再跑两只环；监测总通量、电场、有效折射率和导模功率 | 每次独立保存 3 个 `.lms` 于 `results/runs/`，日志在 `results/logs/`；校验 11 个谱点、有限值、无环基准、功率传输和粗细网格差异。打开工程与截图位置见成功运行目录 README |
+
+在 `D:\SRTP_Work` 执行粗网格：`python '.\projects\case-002-vernier-optics\scripts\10_bus_ring_coupler_varfdtd.py'`。细网格执行：`python '.\projects\case-002-vernier-optics\scripts\10_bus_ring_coupler_varfdtd.py' --config 14_bus_ring_coupler_varfdtd_refined.json`。终端只显示状态和路径，结果在 `.lms` 工程内。当前细网格原生结果见 [s12 工程说明](../results/runs/s12_bus_ring_coupler_refined_20261114_205032/README.md)。
+
+本轮使用窄带等效折射率，适用于 1545–1555 nm 的首轮局部检查；它不等于完整 1520–1600 nm 的宽带校准，也不能替代 3D FDTD 或最终掺杂与金属布局的验证。
+
 ## `06_scan_ring_index_tuning.py`：s09 单环密集微调配置
 
 ### 脚本用途
@@ -155,3 +165,10 @@ python '.\projects\case-002-vernier-optics\scripts\02_build_mzi_ruler.py'
 ```
 
 参数来自 `config/02_mzi_ruler.json`。50 µm 和 100 µm 是初步对比用的臂长差，参考 [Ansys MZI/FSR 示例](https://optics.ansys.com/hc/en-us/articles/360042414214-Interferometer-Siemens-EDA-Interoperability)，不代表已确定的芯片版图尺寸。脚本只保存 MODE/INTERCONNECT 原生工程和运行日志，不生成结果图片或表格。成功工程的打开方法和透射谱、FSR 结果查找位置见 `results/runs/` 下对应工程 README。
+## `08_ring_physical_mode.py`
+
+| 输入 | 功能 | 原生输出 | 核验 |
+|---|---|---|---|
+| `config/11_ring_physical.json`；文献给出的环半径、截面和 200 nm 间隙 | 建立两环三总线 MODE 几何；对同截面直波导及 10/11 µm 弯曲波导分别求 FDE 主模 | `results/runs/s10_ring_physical_*/` 内 4 个 `.lms`；日志在对应 `results/logs/` | 检查脚本状态、四个工程文件、三项 Mode 1 结果；几何间隙和场分布待用户截图复核 |
+
+从 `D:\SRTP_Work` 运行 `python '.\projects\case-002-vernier-optics\scripts\08_ring_physical_mode.py'`。本脚本只保存原生工程与日志，不生成图片或结果表格。工程分别如何打开、查看哪些结果及截图存放处，见 [s10 工程说明](../results/runs/s10_ring_physical_20261114_192733/README.md)。

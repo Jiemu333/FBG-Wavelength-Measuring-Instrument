@@ -1,5 +1,9 @@
 # 双微环与 MZI 光学模型
 
+局部耦合首轮成果：[s12 细网格直波导—微环耦合](results/runs/s12_bus_ring_coupler_refined_20261114_205032/README.md)。MODE varFDTD 在 200 nm 间隙、1550 nm 附近求得 10/11 μm 环导模功率耦合约 1.68%/1.88%，[s11 粗网格工程](results/runs/s11_bus_ring_coupler_20261114_204336/README.md)用于网格对照。这是无掺杂侧翼、无金属的局部 2.5D 结果，尚未替换 INTERCONNECT 的 5.5% 拟合值；打开文件和截图清单见 s12 README。
+
+物理几何第一轮成果：[s10 双环布局与弯曲模式](results/runs/s10_ring_physical_20261114_192733/README.md)。它把文献尺寸放入可查看的 MODE 几何，并分别求出 10/11 µm 弯曲环波导的局部主模；尚未提取耦合系数或接入加热器结果。
+
 密集单环微调成果：[`s09_ring_detuning_dense_20261107_181841_036966`](results/runs/s09_ring_detuning_dense_20261107_181841_036966/README.md)。11 个原生工程与 [11 张成果截图](results/figures/s09_ring_detuning_dense_20261107_181841_036966/README.md)已对照核验；对齐点的 Drop2 峰值功率透射率约 0.832，偏离对齐后下降。它用于对齐敏感度比较。
 
 密集协同调谐成果：[`s08_ring_common_dense_20261107_181503_872760`](results/runs/s08_ring_common_dense_20261107_181503_872760/README.md)。13 个原生工程已核验，Drop2 主峰随共同折射率偏置从 1551.709 nm 连续移动到 1552.829 nm；[现有 10 张成果截图](results/figures/s08_ring_common_dense_20261107_181503_872760/README.md)已对照核验，末尾 3 个偏置点尚无截图。

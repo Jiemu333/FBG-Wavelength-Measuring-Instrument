@@ -1,0 +1,43 @@
+{
+  "wavelength_m": 1.55e-6,
+  "ring_radii_m": [1.0e-5, 1.1e-5],
+  "waveguide_width_m": 4.5e-7,
+  "waveguide_height_m": 2.2e-7,
+  "slab_thickness_m": 6.0e-8,
+  "box_thickness_m": 2.0e-6,
+  "bus_ring_gap_m": 2.0e-7,
+  "p_plus_clearance_from_core_edge_m": 6.0e-7,
+  "layout_assumptions": {
+    "bus_extension_each_side_m": 5.0e-6,
+    "slab_radial_span_m": 3.2e-6,
+    "ring_center_x_positions_m": [-1.0e-5, 1.1e-5],
+    "slab_coupler_clearance_deg": 30,
+    "note": "Bus extension, ring center offset, annular slab span, and slab cutouts near couplers are visualization assumptions, not dimensions stated by the paper or a PDK layout. Doping and metal are not optically modeled here."
+  },
+  "materials": {
+    "silicon": "Si (Silicon) - Palik",
+    "oxide": "SiO2 (Glass) - Palik"
+  },
+  "bend_fde": {
+    "x_span_m": 4.0e-6,
+    "z_min_m": -1.0e-6,
+    "z_max_m": 1.0e-6,
+    "trial_modes": 6,
+    "mesh_dx_m": 2.0e-8,
+    "mesh_dz_m": 2.0e-8,
+    "mesh_x_span_m": 2.0e-6,
+    "mesh_z_min_m": -3.0e-7,
+    "mesh_z_max_m": 6.0e-7,
+    "bend_orientation_deg": 90
+  },
+  "sources": {
+    "ring_radii_m": "Zhou et al. (2013), section 3, 10 and 11 um",
+    "waveguide_width_m": "Zhou et al. (2013), section 2, 0.45 um",
+    "waveguide_height_m": "Zhou et al. (2013), section 2, 220 nm",
+    "slab_thickness_m": "Zhou et al. (2013), section 2, 60 nm",
+    "box_thickness_m": "Zhou et al. (2013), section 3, 2 um",
+    "bus_ring_gap_m": "Zhou et al. (2013), section 3, 200 nm",
+    "p_plus_clearance_from_core_edge_m": "Zhou et al. (2013), section 2, 0.6 um",
+    "wavelength_m": "Chosen 1550 nm project reference, not a fixed FBG wavelength"
+  }
+}
