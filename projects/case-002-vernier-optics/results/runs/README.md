@@ -18,4 +18,4 @@
 | [s01 MZI 标尺](s01_mzi_ruler_20261106_172434/README.md) | 原生工程及截图已核验；100 µm 透射图运算待统一 | 50/100 µm 臂长差；[截图结论](../figures/s01_mzi_ruler_20261106_172434/README.md) |
 
 `s01_mzi_ruler_20261106_172434` 是唯一保留的 MZI 标尺运行目录，含 MODE 波导工程和两种臂长差的 INTERCONNECT 工程。
-| [s14 FBG 反射接入双环](s14_fbg_ring_link_20261115_212148/README.md) | INTERCONNECT 原生工程已完成，四路 ONA 频谱已核验；示范光栅参数，待用户截图 | 打开 `fbg_reflection_dual_ring.icp`；`ONA input 4` 看 FBG 反射，`input 3` 看双环 Drop2 |
+| [s14 示范光栅接入双环](s14_fbg_ring_link_20261115_212148/README.md) | 使用软件内置 Bragg 光栅示范参数的纯光学连接算例；并非实际 FBG 模型 | 打开 `fbg_reflection_dual_ring.icp`；`ONA input 4` 看示范反射，`input 3` 看双环 Drop2 |

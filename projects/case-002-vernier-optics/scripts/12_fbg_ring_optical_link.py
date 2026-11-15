@@ -1,4 +1,4 @@
-"""Connect a model FBG reflection to the saved double-ring optical circuit."""
+"""Connect an illustrative Bragg-grating element to the saved ring circuit."""
 from __future__ import annotations
 
 import json
@@ -60,7 +60,7 @@ def validate_config(cfg: dict) -> None:
 
 
 def write_readme(run_dir: Path, baseline: Path, center: float, cfg: dict) -> None:
-    content = f"""# s14 FBG 反射与双微环光路
+    content = f"""# s14 示范 Bragg 光栅反射与双微环光路
 
 ## fbg_reflection_dual_ring.icp
 
@@ -68,7 +68,7 @@ def write_readme(run_dir: Path, baseline: Path, center: float, cfg: dict) -> Non
 
 从已保存的 [s13 双环工程](../s13_local_coupling_circuit_20261115_205936_021858/README.md)读取双环和 ONA 配置，保留原有双环、耦合系数及扫描范围。在 ONA 与 ring1 之间接入环形器和 Bragg 光栅：`ONA output → CIR port 1 → CIR port 2 → FBG port 1`；FBG 反射经 `CIR port 3` 进入 ring1，同时接入 ONA input 4；原有三个双环观察端保持为 ONA input 1/2/3。FBG 中心设置为原工程 Drop2 在 1550 nm 参考点附近的已保存主峰，即 {center * 1e9:.6f} nm。
 
-FBG 使用 Ansys INTERCONNECT Bragg Grating 元件的示范参数：长度 {cfg['fbg_length_m']} m，有效/群折射率 {cfg['fbg_effective_index']}/{cfg['fbg_group_index']}，交流折射率调制 {cfg['fbg_effective_index_change_ac']}。这些是模型输入，不是实测 FBG 参数；本算例只验证纯光学连接与频谱，尚未接入探测器、控制器或电热调谐。
+原理图里名为 `FBG` 的对象，是我添加的 Ansys INTERCONNECT 内置 `Bragg Grating` 元件，并非已有的光纤光栅器件或实测数据。其长度 {cfg['fbg_length_m']} m、有效/群折射率 {cfg['fbg_effective_index']}/{cfg['fbg_group_index']} 和交流折射率调制 {cfg['fbg_effective_index_change_ac']} 均为示范输入；中心由已有双环峰指定。本算例只验证纯光学连接，不能据此宣称完成实际 FBG 建模；探测器、控制器与电热调谐尚未接入。
 
 ### 工程打开后使用方法
 
