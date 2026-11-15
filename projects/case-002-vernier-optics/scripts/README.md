@@ -1,5 +1,13 @@
 # 脚本说明
 
+## `11_local_coupling_circuit_check.py`：s13 局部耦合接入电路对照
+
+| 输入工程与配置 | 脚本功能 | 运行与原生输出 | 校验点 |
+|---|---|---|---|
+| `config/15_local_coupling_circuit.json`；s12 的两只 MODE 环局部耦合工程；s05 已对齐双环 INTERCONNECT 工程 | 在约 1550 nm 的已保存谱点读取 `ring_guided → T_forward`，替换 s05 两只环的功率耦合参数，保留其他电路设置后重新求解 | 在 `D:\SRTP_Work` 运行 `python '.\projects\case-002-vernier-optics\scripts\11_local_coupling_circuit_check.py'`；新 `.icp` 在 `results/runs/s13_local_coupling_circuit_*/`，日志在同名 `results/logs/` | 校验原生波长、耦合参数写入值，以及 ONA 三个输出均有有限光谱；在运行目录 README 查看工程和截图入口 |
+
+这是局部耦合参数的电路敏感度对照。配置明确假设每只环的两个总线耦合区相同；现有 s12 只直接模拟了其中一个局部耦合区，因此本轮不证明完整器件已完成物理校准。终端仅输出状态和路径，不生成图片或自制结果表格。
+
 ## `10_bus_ring_coupler_varfdtd.py`：s11/s12 局部电磁耦合
 
 | 输入与参数来源 | 脚本功能 | 原生输出与校验 |

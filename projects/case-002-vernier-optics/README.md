@@ -1,5 +1,7 @@
 # 双微环与 MZI 光学模型
 
+局部耦合参数电路对照：[s13 原生 INTERCONNECT 工程](results/runs/s13_local_coupling_circuit_20261115_205936_021858/README.md)。直接读取 s12 保存的 10/11 μm 环功率耦合值，接入 s05 已对齐电路；共同峰仍在约 1551.709 nm，Drop2 峰值由约 0.832 变为 0.574。原生结果已核验，用户截图待补。此轮仅是参数敏感度对照，尚非完整器件校准。
+
 局部耦合首轮成果：[s12 细网格直波导—微环耦合](results/runs/s12_bus_ring_coupler_refined_20261114_205032/README.md)。MODE varFDTD 在 200 nm 间隙、1550 nm 附近求得 10/11 μm 环导模功率耦合约 1.68%/1.88%，[s11 粗网格工程](results/runs/s11_bus_ring_coupler_20261114_204336/README.md)用于网格对照。这是无掺杂侧翼、无金属的局部 2.5D 结果，尚未替换 INTERCONNECT 的 5.5% 拟合值；打开文件和截图清单见 s12 README。
 
 物理几何第一轮成果：[s10 双环布局与弯曲模式](results/runs/s10_ring_physical_20261114_192733/README.md)。它把文献尺寸放入可查看的 MODE 几何，并分别求出 10/11 µm 弯曲环波导的局部主模；尚未提取耦合系数或接入加热器结果。

@@ -1,0 +1,11 @@
+{
+  "run_prefix": "s13_local_coupling_circuit",
+  "baseline_project": "results/runs/s05_ring_q_aligned_20261107_105136_874630/dual_ring_static_aligned.icp",
+  "ring_mode_projects": {
+    "ring1": "results/runs/s12_bus_ring_coupler_refined_20261114_205032/ring1_bus_coupler_varfdtd.lms",
+    "ring2": "results/runs/s12_bus_ring_coupler_refined_20261114_205032/ring2_bus_coupler_varfdtd.lms"
+  },
+  "coupling_wavelength_m": 1.55e-6,
+  "assume_same_coupling_at_both_buses": true,
+  "output_project_name": "dual_ring_local_coupling_check.icp"
+}
