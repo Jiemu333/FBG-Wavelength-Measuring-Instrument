@@ -1,0 +1,13 @@
+{
+  "run_prefix": "s14_fbg_ring_link",
+  "baseline_project": "results/runs/s13_local_coupling_circuit_20261115_205936_021858/dual_ring_local_coupling_check.icp",
+  "output_project_name": "fbg_reflection_dual_ring.icp",
+  "fbg_center": "nearest_saved_drop2_peak_to_reference",
+  "reference_wavelength_m": 1.55e-6,
+  "fbg_length_m": 0.005,
+  "fbg_effective_index": 1.447,
+  "fbg_group_index": 1.447,
+  "fbg_effective_index_change_ac": 0.0004,
+  "fbg_effective_index_change_dc": 0.0,
+  "fbg_parameter_source": "Ansys INTERCONNECT Bragg Grating element documented defaults; these are illustrative model inputs, not measured FBG specifications. Center follows the saved s13 Drop2 peak nearest the case's 1550 nm reference."
+}

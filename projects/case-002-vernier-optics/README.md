@@ -1,5 +1,7 @@
 # 双微环与 MZI 光学模型
 
+FBG 反射接入双环的纯光学成果：[s14 原生工程](results/runs/s14_fbg_ring_link_20261115_212148/README.md)。光栅使用 INTERCONNECT 示例参数，反射经环形器进入双环；已核验 ONA 反射谱和 Drop2 谱。尚未接入电热调谐、探测器与反馈控制。
+
 局部耦合参数电路对照：[s13 原生 INTERCONNECT 工程](results/runs/s13_local_coupling_circuit_20261115_205936_021858/README.md)。直接读取 s12 保存的 10/11 μm 环功率耦合值，接入 s05 已对齐电路；共同峰仍在约 1551.709 nm，Drop2 峰值由约 0.832 变为 0.574。原生结果已核验，用户截图待补。此轮仅是参数敏感度对照，尚非完整器件校准。
 
 局部耦合首轮成果：[s12 细网格直波导—微环耦合](results/runs/s12_bus_ring_coupler_refined_20261114_205032/README.md)。MODE varFDTD 在 200 nm 间隙、1550 nm 附近求得 10/11 μm 环导模功率耦合约 1.68%/1.88%，[s11 粗网格工程](results/runs/s11_bus_ring_coupler_20261114_204336/README.md)用于网格对照。这是无掺杂侧翼、无金属的局部 2.5D 结果，尚未替换 INTERCONNECT 的 5.5% 拟合值；打开文件和截图清单见 s12 README。

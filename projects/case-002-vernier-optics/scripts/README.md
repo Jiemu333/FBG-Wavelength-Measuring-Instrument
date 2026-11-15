@@ -180,3 +180,11 @@ python '.\projects\case-002-vernier-optics\scripts\02_build_mzi_ruler.py'
 | `config/11_ring_physical.json`；文献给出的环半径、截面和 200 nm 间隙 | 建立两环三总线 MODE 几何；对同截面直波导及 10/11 µm 弯曲波导分别求 FDE 主模 | `results/runs/s10_ring_physical_*/` 内 4 个 `.lms`；日志在对应 `results/logs/` | 检查脚本状态、四个工程文件、三项 Mode 1 结果；几何间隙和场分布待用户截图复核 |
 
 从 `D:\SRTP_Work` 运行 `python '.\projects\case-002-vernier-optics\scripts\08_ring_physical_mode.py'`。本脚本只保存原生工程与日志，不生成图片或结果表格。工程分别如何打开、查看哪些结果及截图存放处，见 [s10 工程说明](../results/runs/s10_ring_physical_20261114_192733/README.md)。
+
+## `12_fbg_ring_optical_link.py`
+
+| 输入工程 | 配置 | 功能 | 原生输出与校验 |
+|---|---|---|---|
+| s13 双环 `.icp` | `config/16_fbg_ring_link.json` | 在双环前接入环形器与示范 Bragg 光栅，同时保留反射谱观察端 | `results/runs/s14_fbg_ring_link_*/fbg_reflection_dual_ring.icp`；核验 ONA 四个端口的原生频谱；日志在 `results/logs/` |
+
+从 `D:\SRTP_Work` 运行 `python '.\projects\case-002-vernier-optics\scripts\12_fbg_ring_optical_link.py'`。FBG 参数是 Ansys 元件示范值，中心取 s13 已保存的 1550 nm 附近 Drop2 峰，仅用于纯光学链路测试。工程查看入口与截图清单见成功运行目录 README。
